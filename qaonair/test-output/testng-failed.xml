@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <listeners>
+    <listener class-name="com.itelearn.Listener.Listener"/>
+  </listeners>
   <test name="Default test(failed)">
     <classes>
-      <class name="eCommerce.qaonair.App">
+      <class name="com.itelearn.dataProviders.dataSets">
         <methods>
-          <include name="freelSignUp"/>
+          <include name="settingBrowserProperties"/>
+          <include name="loginDataSet" invocation-numbers="0 1"/>
+          <include name="initialization"/>
         </methods>
-      </class> <!-- eCommerce.qaonair.App -->
+      </class> <!-- com.itelearn.dataProviders.dataSets -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
