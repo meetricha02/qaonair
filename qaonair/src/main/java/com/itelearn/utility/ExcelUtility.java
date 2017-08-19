@@ -16,10 +16,7 @@ import com.itelearn.properties.PropertyFileReader;
 
 public class ExcelUtility {
 	public int sheetRows, sheetCols;
-//String[][] xData, xTC;        
-	//public int nRows;
-	//public int rEID, rTC,rdata, rDataSet;
-	//public String[][] xElement;
+
 	public HSSFSheet sheet;
 	HSSFRow row;
 	HSSFCell cell;
@@ -46,10 +43,10 @@ public String[][] readExcel(String Sheetname) throws IOException{
 	String[][] xData = new String[sheetRows][sheetCols];
 	for (int i=1; i<sheetRows;i++){
 		 row= sheet.getRow(i);
-		 System.out.println("ROW OBJECT AT "+i+row);
+		// System.out.println("ROW OBJECT AT "+i+row);
 		for(int j=0;j<sheetCols;j++){
-			System.out.println("VALUE OF COL :"+j+"        "+ row.getCell(j) );
-			cell= row.getCell(j);             ///??????????/ Null pointer
+		//	System.out.println("VALUE OF COL :"+j+"        "+ row.getCell(j) );
+			cell= row.getCell(j);             
 			String testcaseValue = "-";
 			if (cell!=null){
 				testcaseValue = cellToString(cell);

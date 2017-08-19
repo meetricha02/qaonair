@@ -1,57 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="59640" started-at="2017-08-12T06:43:51Z" finished-at="2017-08-12T06:44:50Z">
+  <suite name="Default suite" duration-ms="927" started-at="2017-08-18T22:10:42Z" finished-at="2017-08-18T22:10:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="59640" started-at="2017-08-12T06:43:51Z" finished-at="2017-08-12T06:44:50Z">
-      <class name="com.itelearn.dataProviders.dataSets">
-        <test-method status="PASS" signature="settingBrowserProperties()[pri:0, instance:com.itelearn.dataProviders.dataSets@4cb2c100]" name="settingBrowserProperties" is-config="true" duration-ms="246" started-at="2017-08-11T23:43:51Z" finished-at="2017-08-11T23:43:51Z">
+    <test name="Default test" duration-ms="927" started-at="2017-08-18T22:10:42Z" finished-at="2017-08-18T22:10:43Z">
+      <class name="practiceDDFTest2">
+        <test-method status="PASS" signature="settingBrowserProperties()[pri:0, instance:practiceDDFTest2@68c4039c]" name="settingBrowserProperties" is-config="true" duration-ms="31" started-at="2017-08-18T15:10:42Z" finished-at="2017-08-18T15:10:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- settingBrowserProperties -->
-        <test-method status="PASS" signature="initialization()[pri:0, instance:com.itelearn.dataProviders.dataSets@4cb2c100]" name="initialization" is-config="true" duration-ms="20" started-at="2017-08-11T23:43:51Z" finished-at="2017-08-11T23:43:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="loginDataSet(java.lang.String, java.lang.String)[pri:0, instance:com.itelearn.dataProviders.dataSets@4cb2c100]" name="loginDataSet" duration-ms="31458" started-at="2017-08-11T23:43:51Z" data-provider="logindata" finished-at="2017-08-11T23:44:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[xyv]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[456]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="loginDataSet(java.lang.String, java.lang.String)[pri:0, instance:practiceDDFTest2@68c4039c]" name="loginDataSet" duration-ms="0" started-at="2017-08-18T15:10:43Z" data-provider="testdata" finished-at="2017-08-18T15:10:43Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: 2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:143)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:426)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at practiceDDFTest2.readExceltest(practiceDDFTest2.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:117)
+	... 20 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDataSet -->
-        <test-method status="PASS" signature="loginDataSet(java.lang.String, java.lang.String)[pri:0, instance:com.itelearn.dataProviders.dataSets@4cb2c100]" name="loginDataSet" duration-ms="24324" started-at="2017-08-11T23:44:25Z" data-provider="logindata" finished-at="2017-08-11T23:44:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abc]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginDataSet -->
-        <test-method status="PASS" signature="initialization()[pri:0, instance:com.itelearn.dataProviders.dataSets@4cb2c100]" name="initialization" is-config="true" duration-ms="0" started-at="2017-08-11T23:44:25Z" finished-at="2017-08-11T23:44:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialization -->
-      </class> <!-- com.itelearn.dataProviders.dataSets -->
+      </class> <!-- practiceDDFTest2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
